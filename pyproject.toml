@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "simple-calculator"
+version = "0.1.0"
+description = "Simple calcuulator example to be used with unit testing"
+authors = ["Quinton Smith <quintonsmith@isu.edu>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [
+    { include = "src/calculator", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
